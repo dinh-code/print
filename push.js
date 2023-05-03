@@ -1,3 +1,4 @@
+var s = new URL(location.href).searchParams.get("bill");
 var j = JSON.parse(decodeURIComponent(s));
 
 document.title="["+j.key+"]Nha khoa SV - Hóa đơn";
