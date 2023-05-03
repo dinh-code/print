@@ -2,7 +2,7 @@ var s = new URL(location.href).searchParams.get("bill");
 var j = JSON.parse(decodeURIComponent(s));
 var qrSize = 150;
 
-document.title="["+j.key+"]Nha khoa SV - Hóa đơn";
+document.title="["+j.key+"] Nha khoa SV - Hóa đơn";
 //Khách hàng
 document.getElementById("hoTen").innerText=j.hoTen;
 document.getElementById("sdt").innerText=j.sdt;
@@ -18,7 +18,7 @@ new QRCode(document.getElementById("gmap"), {text: "https://goo.gl/maps/WNVStknA
 document.getElementById("vcb").src="https://img.vietqr.io/image/VCB-9968747831-qr_only.png?amount="+j.tienHangN+"&addInfo="+j.key+"%20"+j.hoTen+"%20"+j.sdt+"&accountName=Dinh phuoc an";
 //Chi tiết
 j.chiTiet.sort((a, b)=>{
-    if(a.sku > b.sku) return -1;
+    if(a[0] > b[0]) return -1;
 }).forEach((item)=>{
     document.getElementById("chiTiet").insertRow(1).innerHTML=
     `<tr>
