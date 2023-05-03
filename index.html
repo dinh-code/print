@@ -7,6 +7,7 @@
     <title>Nha khoa SV - Hóa đơn</title>
     <link rel="stylesheet" type="text/css" media="all" href="/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <body>
     <div class="container">
         <div id="head">
@@ -38,7 +39,7 @@
                     <div class="card">
                         <div class="card-header">
                             <i class="material-icons">pin_drop</i>
-                            <div class="card-body dc" style="width: 16mm;">Địa chỉ:&nbsp;</div>
+                            <!--div class="card-body dc" style="width: 16mm;">Địa chỉ:&nbsp;</div-->
                             <div id="diaChi" class="card-body dc">---</div>
                         </div>
                     </div>
@@ -64,8 +65,8 @@
                             <div id="maDon" class="card-body-sm">---</div>
                         </div>        
                     </div>
-                    <div id="info-top-right-qrcode">
-                        <img id="keyQr" src="">
+                    <div class="info-top-right-qrcode w17" id="keyQr">
+                        
                     </div>
                 </div>
             </div>
@@ -90,13 +91,13 @@
                     <td></td>
                     <td id="tienHang" class="text-right" style="padding-right: 2mm;">---</td>
                     <td id="soKien" class="text-center">---</td>
-                    <td id="ghiChu" class="text-center">---</td>
+                    <td id="ghiChu" class="text-center t-upper">---</td>
                 </tr>
             </table>
         </div>
         <div id="shop">
             <div class="col">
-                <div id="info-top-right-qrcode">
+                <div class="info-top-right-qrcode">
                     <img id="vcb" src="">
                 </div>
                 <div class="payInfo">
@@ -109,8 +110,7 @@
                 </div>
             </div>
             <div class="col">
-                <div id="info-top-right-qrcode">
-                    <img id="momo" src="">
+                <div class="info-top-right-qrcode" id="momo">
                 </div>
                 <div class="payInfo">
                     <div class="headImg">
@@ -130,13 +130,14 @@
                         Mua hàng & tư vấn<BR>05696 08118 (Zalo)
                     </div>
                 </div>
-                <div id="info-top-right-qrcode">
-                    <img src="https://chart.googleapis.com/chart?chs=120x120&cht=qr&chl=https://goo.gl/maps/WNVStknA7ZxCAQG48">
+                <div class="info-top-right-qrcode" id="gmap">
+                    <!--img src="https://chart.googleapis.com/chart?chs=120x120&cht=qr&chl=https://goo.gl/maps/WNVStknA7ZxCAQG48"-->
                 </div>
             </div>
            
         </div>
     </div>
+    <script src="/ConvertVie.js"></script>
     <script src="/push.js"></script>
 </body>
 </html>

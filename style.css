@@ -127,15 +127,21 @@ img{
     padding: 2mm;
 }
 #info-top-right-col2{
-    width: 41mm;
+    width: 42mm;
     padding: 2mm;
 }
-#info-top-right-qrcode{
-    width: 22mm;
+.info-top-right-qrcode{
+    width: 20mm;
+    height: 20mm;
     border-left: 0.35mm solid;
+    padding: 2mm;
 }
-#info-top-right-qrcode img{
-    border-radius: 3mm;
+.w17{
+    width: 17mm;
+    height: 17mm;
+}
+.info-top-right-qrcode img{
+    /*border-radius: 2mm;*/
 }
 .card{
     height: 10mm;
@@ -148,6 +154,7 @@ img{
     font-weight: unset!important;
     font-size: 3mm!important;
     line-height: normal!important;
+    text-align: justify;
 }
 .card:first-child{
     line-height: 3mm;
@@ -300,7 +307,10 @@ tr:last-of-type td{
     height: 6.5mm;
     /*color: var(--blue);*/
     /*background-color: white;*/
-    font-size: 5mm;
+    font-size: 4mm;
+}
+.t-upper{
+    text-transform: uppercase;
 }
 tr:last-child {
     background-color: white;
@@ -342,9 +352,13 @@ tr:last-child {
     height: 5mm;
     width: auto;
 }
-.col #info-top-right-qrcode{
+.col .info-top-right-qrcode{
     border: none;
 }
+/*#vcb{
+    max-width: 18mm;
+    padding: 3mm;
+}*/
 .payInfo div{
     padding: 1mm;
 }
