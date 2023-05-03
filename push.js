@@ -12,7 +12,8 @@ document.getElementById("ngayDat").innerText=j.ngayDat;
 document.getElementById("tenDVVC").innerText=j.tenDVVC;
 document.getElementById("maDon").innerText=j.maDon;
 document.getElementById("keyQr").src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=https%3A%2F%2Fwww.nhakhoasv.com%2F%3ForderKey%3D"+j.key;
-document.getElementById("momo").src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=2%7C99%7C0968747831%7CDinh%20Phuoc%20An%7C%7C0%7C0%7C%7Cho ten va sdt%7Ctransfer_myqr";
+//document.getElementById("momo").src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=2%7C99%7C0968747831%7CDinh%20Phuoc%20An%7C%7C0%7C0%7C%7Cho ten va sdt%7Ctransfer_myqr";
+document.getElementById("momo").src="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=2%7C99%7C0968747831%7CDinh%20Phuoc%20An%7C%7C0%7C0%7C"+j.tienHangN+"%7C"+j.key+"%20"+j.hoTen+"%20"+j.sdt+"%7Ctransfer_myqr";
 document.getElementById("vcb").src="https://chart.googleapis.com/chart?chs=120x120&cht=qr&chl=00020101021138540010A00000072701240006970436011099687478310208QRIBFTTA53037045802VN62170813ho ten va sdt63046D75";
 //Chi tiết
 j.chiTiet.sort((a, b)=>{
