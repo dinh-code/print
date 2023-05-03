@@ -20,18 +20,18 @@ j.chiTiet.sort((a, b)=>{
 }).forEach((item)=>{
     document.getElementById("chiTiet").insertRow(1).innerHTML=
     `<tr>
-            <td class="text-center">${item.sku}</td>
+            <td class="text-center">${item[0]}</td>
             <td>
                 <div class="card f-center flex h-fit">
-                    <div class="card-body">${item.proTitle}</div>
-                    <div class="card-header">${item.proDes}</div>
+                    <div class="card-body">${item[1]}</div>
+                    <div class="card-header">${item[2]}</div>
                 </div>
             </td>
-            <td class="text-center">${item.soLg}</td>
-            <td class="text-right">${item.gia}</td>
-            <td class="text-right">${item.thanhTien}</td>
-            <td class="text-center">${item.tui}</td>
-            <td>${item.ghiChu}</td>
+            <td class="text-center">${item[3]}</td>
+            <td class="text-right">${item[4]}</td>
+            <td class="text-right">${item[5]}</td>
+            <td class="text-center">${item[6]}</td>
+            <td>${item[7]}</td>
         </tr>`;
 });
 
