@@ -322,6 +322,7 @@ tr:last-child {
 }
 #detail th:nth-child(7){
     /*width: 15%;*/
+    min-width: 20mm;
 }
 /******/
 #total, #shop{
