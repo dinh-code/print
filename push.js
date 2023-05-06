@@ -43,6 +43,15 @@ document.getElementById("tienHang").innerText=j.tienHang;
 document.getElementById("soKien").innerText=j.soKien;
 document.getElementById("ghiChu").innerText=j.ghiChu;
 
-
+var isShow = true;
+document.getElementById("shop").addEventListener("click", ()=>{
+    
+    isShow = isShow ? false : true;
+    if(isShow){
+        document.getElementById("shop").style.visibility = "unset";
+    } else {
+        document.getElementById("shop").style.visibility = "collapse";
+    }
+});
 
 
