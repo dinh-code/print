@@ -20,7 +20,7 @@ document.getElementById("vcb").src="https://img.vietqr.io/image/VCB-9968747831-q
 j.chiTiet.sort((a, b)=>{
     if(a[0] > b[0]) return -1;
 }).forEach((item)=>{
-    item[6] = item[6] > 0 ? item[6] : "";
+    item[6] = item[6] != '0' ? item[6] : "";
     document.getElementById("chiTiet").insertRow(1).innerHTML=
     `<tr>
             <td class="text-center">${item[0]}</td>
